@@ -49,10 +49,6 @@ docs/
 tests/                        # CPU preparation and protocol checks
 ```
 
-## Reproduction scope
-
-This release provides the method's source and a documented route for regenerating its intermediate artifacts. The `paper/` configurations are release recipes, not snapshots of the original server runs. Historical server checkpoints, corruption assignments, and frozen policies are not bundled. Accordingly, the release does not claim that newly generated artifacts reproduce each reported table entry exactly. Use matching reference checkpoints and preserve all seeds, policies, assignments, and final configurations for a particular run.
-
 ## Models
 
 Obtain reference checkpoints from the [OpenPCDet Model Zoo](https://github.com/open-mmlab/OpenPCDet#model-zoo) or train the reference detectors on the target dataset. A checkpoint must match its architecture, class ordering, input features, and dataset configuration. No paper-specific checkpoint download is included in this release.
